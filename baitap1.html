@@ -1,0 +1,64 @@
+﻿<html>
+	<head>
+		<title>Máy tính mẫu 1</title>
+		<script language="javascript">
+		function calculator(pheptinh){
+			var so1,so2,ketqua;
+			so1=parseFloat(document.frmMaytinh.txtSo1.value);
+			so2=parseFloat(document.frmMaytinh.txtSo2.value);
+			ketqua=0;
+			switch(pheptinh){
+			case "Cộng":
+				ketqua=so1+so2;
+				break;
+			case "Trừ":
+				ketqua=so1-so2;
+				break;
+			case "Nhân":
+				ketqua=so1*so2;
+				break;
+			case "Chia":
+				ketqua=so1/so2;
+				break;
+			}
+			document.frmMaytinh.txtKetqua.value=ketqua;
+		}
+		</script>
+	</head>
+	<body>
+	<form action="" method="get" name="frmMaytinh">
+	<table width="347" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+		<tr>
+			<td colspan="2" align="center"><font color="#0000FF" size="6">MÁY TÍNH MẪU 1</font></td>
+		</tr>
+		<tr>
+			<td><font color="#0000FF" size="">&nbsp;&nbsp;Số thứ nhất:</font></td>
+			<td>
+			<label for="txtSo1"></label>
+			<input name="txtSo1" type="number" id="txtSo1" value="0">
+			</td>
+		</tr>
+		<tr>
+			<td><font color="#0000FF" size="">&nbsp;&nbsp;Số thứ hai:</font></td>
+			<td>
+			<label for="txtSo2"></label>
+			<input name="txtSo2" type="number" id="txtSo2" value="0">
+			</td>
+		</tr>
+		<tr>
+			
+			<td colspan="2" align="center">
+			+<input type="radio" name="bradio" id="bradio" value="Cộng" checked>
+			-<input type="radio" name="bradio" id="bradio" value="Trừ">
+			x<input type="radio" name="bradio" id="bradio" value="Nhân">
+			/<input type="radio" name="bradio" id="bradio" value="Chia">
+			</td>
+		</tr>
+		<tr>
+			<td><button type="button" onclick="calculator(document.frmMaytinh.bradio.value)">Kết quả:</button></td>
+			<td><input name="txtKetqua" type="text" id="txtKetqua" value="0"></td>
+		</tr>
+	</table>
+	</form>
+	</body>
+</html>
