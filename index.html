@@ -1,18 +1,207 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Test application</title>
+<!-- saved from url=(0039)http://getbootstrap.com/examples/theme/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+    <title>Hotel TT</title>
 
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css">
+    <link href="css/app.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/tienCustom.css" rel="stylesheet">
+
+
 </head>
-<body>
+
+<body role="document">
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse m-b-none" role="navigation">
+    <div class="container">
+        <div class="col-sm-2">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="" href="# ">
+                    <img src="img/hotelAvatar.png" style="width: 100%; height: 100%">
+                </a>
+            </div>
+        </div>
+
+        <div class="col-sm-10">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href=" ">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dropdown">
+                        <a href=" " class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href=" ">Action</a></li>
+                            <li><a href=" ">Another action</a></li>
+                            <li><a href=" ">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href=" ">Separated link</a></li>
+                            <li><a href=" ">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</nav>
+
+<div class="row">
+    <div class="col-sm-12 gradient">
+        <div class="container">
+            <div class="col-sm-4">
+                <div>
+                    <label class="text-3x move-number">1</label>
+                    <img src="img/bg_step_circle.png">
+                    <label class="text-lg font-normal">Select Dates</label>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div>
+                    <label class="text-3x move-number">2</label>
+                    <img src="img/bg_step_circle.png">
+                    <label class="text-lg font-normal">Select Rooms</label>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div>
+                    <label class="text-3x move-number">3</label>
+                    <img src="img/bg_step_circle.png">
+                    <label class="text-lg font-normal">Confirm Information</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Body-->
+<div class="row m-t-lg">
+    <div class="col-sm-12">
+        <div class="container">
+            <div class="col-sm-4">
+                <div class="row">
+                    <form role="form" class="text-sm">
+                        <div class="form-group">
+                            <lable for="checkin">Check-in:</lable>
+                            <input type="text" class="form-control input-sm" id="checkin">
+                        </div>
+
+                        <div class="form-group font-normal">
+                            <lable for="checkout">Check-out:</lable>
+                            <input type="text" class="form-control input-sm" id="checkout">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <lable>Adult:</lable>
+                                    <select class="form-control input-sm">
+                                        <option value="1">naaaaaaaaaaaaaaa</option>
+                                        <option value="2">jkjlkjlk</option>
+                                        <option value="3">fdghjuuuu123</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <lable>Childs:</lable>
+                                    <select class="form-control input-sm">
+                                        <option value="1">naaaaaaaaaaaaaaa</option>
+                                        <option value="2">jkjlkjlk</option>
+                                        <option value="3">fdghjuuuu123</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <lable>Code:</lable>
+                            <input type="text" class="form-control input-sm" id="code">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row">
+                    <div class="text-center text-info gradient padder-v">
+                        <label>Login</label>
+                    </div>
+
+                    <div class="">
+                        <form>
+                            <div class="form-group">
+                                <label class="font-normal">Username</label>
+                                <input type="text" class="form-control input-sm">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="font-normal">Password</label>
+                                <input type="password" class="form-control input-sm">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                bbbbbbbbbb
+            </div>
+        </div>
+    </div>
+
+</div>
 
 
-this is change
 
-<h1>Hello workld!</h1>
 
-</body>
-</html>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/docs.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+<script>
+    $(function() {
+        $( "#checkin" ).datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            changeYear: true,
+            numberOfMonths: 2,
+            onClose: function( selectedDate ) {
+                $( "#checkout" ).datepicker( "option", "minDate", selectedDate );
+            }
+        });
+        $( "#checkout" ).datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            changeYear: true,
+            numberOfMonths: 2,
+            onClose: function( selectedDate ) {
+                $( "#checkin" ).datepicker( "option", "maxDate", selectedDate );
+            }
+        });
+    });
+</script>
+
+
